@@ -1,0 +1,665 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/*Nav Bar*/
+
+
+.navbar {
+    background-color: transparent !important;
+    transition: background-color 0.3s;
+}
+.bg-scroll {
+    background-color: #a5582c !important;
+}
+.nav-link {
+    letter-spacing: 3px;
+    font-size: medium;
+    color: #452212 !important;
+    transition: color 0.3s;
+}
+.nav-link.scrolled {
+    color: white !important;
+}
+.navbar-toggler-icon {
+    color: #452212 !important;
+}
+.bg-scroll .navbar-toggler-icon {
+    color: white !important;
+}
+
+/*Nav Bar End*/
+
+
+/*Home Page*/
+        /* Custom Styles Home Section */
+        .home {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            height: 100vh;
+            color: white;
+            text-align: left;
+        }
+
+        .home-content {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 2s;
+            text-align: center;
+        }
+
+        .text-1,
+        .text-2,
+        .text-3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .text-1 {
+            color: #a5582c ;
+            font-size: large;
+        }
+        .text-2 {
+            color: #ecc194;
+        }
+
+        .text-3 {
+            color: #452212;
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+        .hareus {
+            padding: 10px 40px;
+            border-radius: 10px;
+            border: 1px solid #a5582c ;
+            box-shadow: 0 0 10px #ecc194;
+            background-color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hareus:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #a5582c;
+        }
+        /* Custom Styles Home Section End */
+/*Home Page End*/
+
+/*Services Section */
+
+        /* Custom Styles Services Section */
+        .three {
+            background: #efbb8591;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .card-customservice {
+            background: #fff;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid transparent;
+            box-shadow: 0 0 10px #452212;
+            transition: transform 0.3s, background-color 0.3s;
+            margin: 0.5rem;
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+        }
+
+        .card-customservice:hover {
+            transform: scale(1.05);
+            background-color: #452212;
+        }
+
+        .card-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .card-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1.5rem 2rem;
+        }
+
+        .card-customservice:hover .card-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            background-color: #e8b395;
+            border: 1px solid #452212;
+        }
+
+        .titleservice {
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            margin: 1rem 0;
+            font-size: 24px; /* Fixed font size */
+        }
+
+        .textservice {
+            line-height: 1.5;
+            color: #452212;
+            margin-bottom: 1rem;
+            font-size: 16px; /* Fixed font size */
+        }
+
+        img {
+            padding: 10px;
+        }
+
+        .icon-color {
+            color: #452212;
+        }
+
+        .contactservices {
+            text-align: center;
+        }
+
+        .btnservicescontact {
+            padding: 10px 40px;
+            border-radius: 10px;
+            border: 1px solid #a5582c;
+            box-shadow: 0 0 10px #ecc194;
+            background-color: white;
+            color: #452212;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btnservicescontact:hover {
+            transform: scale(1.1);
+            color: #452212;
+            text-decoration: none;
+            box-shadow: 0 0 20px #a5582c;
+        }
+
+        @media (max-width: 768px) {
+            .card-customservice {
+                height: 400px;
+                width: 100%;
+            }
+
+            .card-content {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(10px);
+            }
+
+            .card-customservice:hover .card-content {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+        /* Custom Styles Services Section End*/
+/*Services Section End*/
+
+    /* Custom Styles Technologies Section*/
+        /* Custom Styles Technologies Section */
+        .technologies {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        .technologies h2 {
+            color: #452212;
+            margin-bottom: 40px;
+        }
+
+        .tech-item {
+            margin-bottom: 30px;
+        }
+
+        .tech-icons {
+            font-size: 3rem;
+            color: #452212;
+            transition: transform 0.3s;
+        }
+
+        .tech-icons:hover {
+            transform: scale(1.2);
+        }
+
+        .progresstech {
+            height: 25px;
+            background-color: #e9ecef;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .progress-bartech {
+            background-color: #a5582c;
+            color: white;
+            border-radius: 15px;
+            width: 0;
+            transition: width 2s;
+        }
+
+        .tech-name {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #452212;
+        }
+
+
+
+/* Custom Styles Technologies Section End*/
+
+/*Projects Section*/
+        /* Custom CSS for Portfolio Page */
+
+        .projectssection {
+            margin-top: 30px;
+            padding: 50px 0px;
+            background-color: white;
+        }
+
+        .pj {
+            margin-bottom: 20px;
+
+        }
+
+        .project-card {
+            margin-bottom: 30px; /* Add bottom margin for space between cards */
+            box-shadow: 0 0 10px #ecc194;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #452212;
+            width: 90%; /* Set card width */
+            margin: 0 auto; /* Center align the card */
+            height: 400px;
+        }
+
+        .project-images {
+            position: relative;
+            overflow: hidden;
+            height: 400px; /* Set height for images */
+        }
+
+        .project-images img {
+            width: 100%;
+            height: 100%; /* Ensure images fit within container */
+            object-fit: cover; /* Cover image */
+            transition: transform 0.5s ease;
+        }
+
+        .project-images img:hover {
+            transform: scale(1.1);
+        }
+
+        .project-details {
+            padding: 10px;
+            height: 100%; /* Ensure the details section fills the card height */
+        }
+
+        .project-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #452212;
+        }
+
+        .project-description {
+            font-size: 16px;
+            color: #452212;
+            margin-bottom: 5px;
+        }
+
+        .project-info {
+            font-size: 14px;
+            color: #a5582c;
+            margin-bottom: 5px;
+        }
+
+        .project-info i {
+            margin-right: 5px;
+            color: #452212;
+        }
+
+        .project-linkbtn {
+            margin-top: 10px;
+            background-color: white;
+            border: 1px solid #452212;
+            color: #452212;
+        }
+
+        .project-linkbtn:hover {
+            background-color: #452212;
+            color: white;
+            border-color: #452212;
+        }
+
+        @media (max-width: 768px) {
+            .project-card {
+                height: auto; /* Adjust height for smaller screens */
+            }
+
+            .project-images {
+                height: 250px; /* Reduce image height for smaller screens */
+            }
+
+            .project-details {
+                height: auto; /* Adjust height for smaller screens */
+            }
+        }
+/* Custom Styles Projects Section End*/
+
+
+    /*Contact Section Start*/
+
+    .contactussection{
+        background: #efbb8591;
+        padding: 50px 0px;
+        margin-bottom: 0px;
+    }
+    .contactus{
+        margin-top: 100px;
+        background-color: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 0 10px #a5582c;
+    }
+    .contact-left {
+        padding-right: 40px;
+        border-right: 2px solid #452212;
+        margin-bottom: 30px;
+    }
+    .contact-right {
+        padding-left: 40px;
+    }
+    .contact-left p {
+        margin-top: 30px;
+    }
+    .contact-left p i {
+        color: #452212;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+    .social-icons {
+        margin-top: 30px;
+    }
+    .social-icons a {
+        text-decoration: none;
+        font-size: 30px;
+        margin-right: 15px;
+        color: #ababab;
+        display: inline-block;
+        transition: transform 0.5s;
+    }
+    .social-icons a:hover {
+        color: #452212;
+        transform: translateY(-5px);
+    }
+    .btncontactus {
+        display: inline-block;
+        background: #452212;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-right: 10px;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+    .btncontactus:hover {
+        background: #a5582c;
+    }
+    .contact-right form {
+        width: 100%;
+    }
+    form input, form textarea {
+        width: 100%;
+        border: 1px solid #452212;
+        outline: none;
+        background: white;
+        padding: 15px;
+        margin: 15px 0;
+        color: #452212;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+    .contact-right button {
+        padding: 14px 60px;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+        background: #452212;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+    .contact-right button:hover {
+        background: #a5582c;
+    }
+    @media (max-width: 768px) {
+        .contact-left {
+            padding-right: 0;
+            border-right: none;
+            text-align: center;
+        }
+        .contact-right {
+            padding-left: 0;
+        }
+        .social-icons {
+            justify-content: center;
+            display: flex;
+        }
+    }
+
+    /*Contact Us Section End*/
+
+/* About US Section*/
+        /* About Us Section */
+        .headingforabout {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            display: inline-block;
+            padding-bottom: 10px;
+            position: relative;
+            text-align: center;
+        }
+
+        .headingforabout::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            background: #a5582c;
+            height: 3px;
+            left: 50%;
+            bottom: 0;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .headingforabout:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .cardsaboutus {
+            display: flex;
+            padding: 30px;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .cardaboutus {
+            background: #a5582c;
+            overflow: hidden;
+            width: 100%;
+            max-width: 600px; /* Increased max-width */
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .cardaboutus h2 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #452212;
+            text-align: center;
+        }
+
+        .slideraboutus {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slideraboutus input {
+            display: none;
+        }
+
+        .navigationaboutus {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .navigationaboutus label {
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            color: #452212;
+            text-decoration: underline #452212;
+        }
+
+        .navigationaboutus label:hover {
+            background: #f1e2ec;
+            border: #452212;
+        }
+
+        .contentaboutus {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .content-itemaboutus {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            color: black;
+            text-align: left;
+        }
+
+        .aboutussection {
+            margin-top: 100px;
+            box-shadow: 0 0 10px #a5582c;
+            padding: 50px 0px;
+            background-color: white;
+            color: #452212;
+            text-align: center;
+        }
+
+        #skills-ankit:checked ~ .contentaboutus {
+            transform: translateX(0);
+        }
+
+        #education-ankit:checked ~ .contentaboutus {
+            transform: translateX(-100%);
+        }
+
+        #experience-ankit:checked ~ .contentaboutus {
+            transform: translateX(-200%);
+        }
+
+        #skills-kajal:checked ~ .contentaboutus {
+            transform: translateX(0);
+        }
+
+        #education-kajal:checked ~ .contentaboutus {
+            transform: translateX(-100%);
+        }
+
+        #experience-kajal:checked ~ .contentaboutus {
+            transform: translateX(-200%);
+        }
+
+        @media (max-width: 768px) {
+            .cardsaboutus {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navigationaboutus label {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+
+            .cardaboutus {
+                max-width: 100%; /* Adjusted max-width */
+                margin: 15px; /* Adjusted margins */
+            }
+        }
+/* About US Section*/
+
+
+
+
+/* Custom Styles Footer Section start*/
+
+        /* Footer CSS */
+        .footer {
+            background: #a5582c;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .footer h4 {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        .footer p {
+            font-size: 0.9em;
+        }
+        .footer .social-icons {
+            margin: 20px 0;
+        }
+        .footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .footer .social-icons a:hover {
+            color: #452212;
+        }
+        .footer .footer-links {
+            margin: 20px 0;
+        }
+        .footer .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer .footer-links a:hover {
+            color: #452212;
+        }
+        .footer .credits {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .footer .footer-links a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+/* Custom Styles Footer Section End*/

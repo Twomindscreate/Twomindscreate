@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+  Home - TwoMindsCreate
+{% endblock  %}
+
+{% block content %}
+
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="container home-content">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <div class="text-1" style="font-size: 50px;"><i class="fas fa-code icon"></i>Developed By</div>
+                <div class="text-2" style="font-size: 30px;"><i class="fas fa-user icon"></i>Aniket Suryawanshi</div>
+                <div class="text-2" style="font-size: 30px;"><i class="fas fa-user icon"></i>Kajal Khatri</div>
+                <div class="text-3 mb-4" style="font-size: 50px;">We are <span class="typing"></span></div>
+                <button class="hareus">
+                <a href="#" class="hire" style="text-decoration: none; color:  #a5582c"><i class="fas fa-envelope icon" style="color:  #a5582c;"></i> Hire Us</a>
+            </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Home Section End -->
+
+<!-- Services Section Start -->
+<section class="three" id="servicessec">
+<h1 style="text-align: center; margin: 10px 0; color: #452212;">Services</h1>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <!-- First Row -->
+        <div class="col-md-4 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card card-customservice">
+                <h5 style="font-size: 18px;"><i class="fas fa-laptop-code icon-color"></i> Web Developer</h5>
+                <div class="card-bg">
+                    <img src="{% static 'img/web.svg' %}" alt="background">
+                </div>
+                <div class="card-content">
+                    <h2 class="titleservice"><i class="fas fa-laptop-code icon-color"></i> Web Developer</h2>
+                    <p class="textservice" style="text-align: justify; color: black;"> We specialize in creating innovative, responsive, and user-friendly websites. Our comprehensive web development services are designed to help you establish a strong online presence, attract more customers, and achieve your business goals.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card card-customservice">
+                <h5 style="font-size: 18px;"><i class="fas fa-code icon-color"></i> Software Developer</h5>
+                <div class="card-bg">
+                    <img src="{% static 'img/sw.svg' %}" alt="background">
+                </div>
+                <div class="card-content">
+                    <h2 class="titleservice"><i class="fas fa-code icon-color"></i> Software Developer</h2>
+                    <p class="textservice" style="text-align: justify; color: black;">We delivering software solutions tailored to your unique business requirements. Our comprehensive software development services are designed to enhance productivity. Whether you need custom software, enterprise solutions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card card-customservice">
+                <h5 style="font-size: 18px;"><i class="fas fa-server icon-color"></i> Backend Developer</h5>
+                <div class="card-bg">
+                    <img src="{% static 'img/backend.svg' %}" alt="background">
+                </div>
+                <div class="card-content">
+                    <h2 class="titleservice"><i class="fas fa-server icon-color"></i> Backend Developer</h2>
+                    <p class="textservice" style="text-align: justify; color: black;">Our expert backend development team specializes in building robust, scalable, and efficient server-side applications using Python. Our comprehensive backend development services ensure your web applications are secure, capable of handling complex business logic.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Second Row -->
+        <div class="col-md-4 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card card-customservice">
+                <h5 style="font-size: 18px;"><i class="fas fa-brain icon-color"></i> Machine Learning</h5>
+                <div class="card-bg">
+                    <img src="{% static 'img/ml.svg' %}" alt="background">
+                </div>
+                <div class="card-content">
+                    <h2 class="titleservice"><i class="fas fa-brain icon-color"></i> Machine Learning</h2>
+                    <p class="textservice" style="text-align: justify; color: black;"> We deliver data-driven solutions that transform your business operations and decision-making processes. Our comprehensive machine learning services are designed to help you data analytics to gain valuable insights, improve efficiency, and drive innovation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card card-customservice">
+                <h5 style="font-size: 18px;"><i class="fas fa-desktop icon-color"></i> Frontend Developer</h5>
+                <div class="card-bg">
+                    <img src="{% static 'img/front.svg' %}" alt="background">
+                </div>
+                <div class="card-content">
+                    <h2 class="titleservice"><i class="fas fa-desktop icon-color"></i> Frontend Developer</h2>
+                    <p class="textservice" style="text-align: justify; color: black;">We create responsive websites that look and function flawlessly across all devices regardless of the screen size. Our comprehensive frontend solutions are designed to elevate your brand and ensure your website stands out.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card card-customservice">
+                <h5 style="font-size: 18px;"><i class="fas fa-user-tie icon-color"></i> Freelancer</h5>
+                <div class="card-bg">
+                    <img src="{% static 'img/free.svg' %}" alt="background">
+                </div>
+                <div class="card-content">
+                    <h2 class="titleservice"><i class="fas fa-user-tie icon-color"></i> Freelancer</h2>
+                    <p class="textservice" style="text-align: justify; color: black;">Looking to hire a skilled and reliable freelancer for your project? Look no further! We offer freelance services in web development, software development, backend development, etc. Whether you need assistance with a short-term project or ongoing support, we have the expertise and dedication to bring your ideas to life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid contactservices">
+    <h2>Contact Us</h2>
+    <p>Interested in our services? Reach out to us for inquiries.</p>
+    <a href="#" class="btnservicescontact">Contact Us</a>
+</div>
+</section>
+<!-- Services Section End -->
+
+<!-- Technologies Section Start -->
+<section class="technologies" id="technologies">
+<div class="container">
+<h2>Technologies We Know</h2>
+<div class="row">
+    <div class="col-md-4 col-sm-6 tech-item">
+        <i class="fab fa-python tech-icons"></i>
+        <div class="tech-name">Python</div>
+        <div class="progresstech">
+            <div class="progress-bartech" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+        </div>
+    </div>
+    <!-- Add other tech items here -->
+    <div class="col-md-4 col-sm-6 tech-item">
+        <i class="fas fa-database tech-icons"></i>
+        <div class="tech-name">MySQL</div>
+        <div class="progresstech">
+            <div class="progress-bartech" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 tech-item">
+        <i class="fab fa-html5 tech-icons"></i>
+        <div class="tech-name">HTML</div>
+        <div class="progresstech">
+            <div class="progress-bartech" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 tech-item">
+        <i class="fab fa-css3-alt tech-icons"></i>
+        <div class="tech-name">CSS</div>
+        <div class="progresstech">
+            <div class="progress-bartech" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 tech-item">
+        <i class="fab fa-js tech-icons"></i>
+        <div class="tech-name">JavaScript</div>
+        <div class="progresstech">
+            <div class="progress-bartech" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 tech-item">
+        <i class="fab fa-python tech-icons"></i>
+        <div class="tech-name">Django</div>
+        <div class="progresstech">
+            <div class="progress-bartech" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 tech-item">
+        <i class="fas fa-project-diagram tech-icons"></i>
+        <div class="tech-name">Pandas</div>
+        <div class="progresstech">
+            <div class="progress-bartech" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 tech-item">
+        <i class="fas fa-project-diagram tech-icons"></i>
+        <div class="tech-name">NumPy</div>
+        <div class="progresstech">
+            <div class="progress-bartech" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 tech-item">
+        <i class="fas fa-project-diagram tech-icons"></i>
+        <div class="tech-name">Matplotlib</div>
+        <div class="progresstech">
+            <div class="progress-bartech" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- Technologies Section End -->
+
+<style>
+html {
+scroll-behavior: smooth;
+}
+</style>
+<!--Contact Us Section-->
+<section class="contactussection" id="contactusid">
+    <div class="container contactus">
+        <div class="row">
+            <div class="col-md-4 contact-left">
+                <h1 class="sub-title" style="margin-bottom: 50px; color: #a5582c;">Contact Us</h1>
+                <p style="text-align: justify;">We are Aniket Suryawanshi and Kajal Khatri, passionate about technology with a diverse skill set. 
+                    Our expertise ranges from web development using Django to data analysis with Python libraries such as Pandas and NumPy. We are committed to delivering high-quality solutions and continuously improving our skills to stay at the forefront of technological advancements.</p>
+                <p><i class="fas fa-paper-plane" style="color: #452212;"></i> twomindscreate17@gmail.com</p>
+                <p><i class="fas fa-phone-volume" style="color: #452212;"></i> 7798595116</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Twomindscreate" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/kajal-khatri-83ab01250/" target="_blank"><i class="fab fa-linkedin-in"></i> Kajal</a>
+                    <a href="https://www.linkedin.com/in/aniket-suryawanshi-4b06b6274" target="_blank"><i class="fab fa-linkedin-in"></i> Aniket</a>
+                </div>
+            </div>
+            <div class="col-md-8 contact-right">
+                <form name="submit-to-google-sheet" method="post" action="{% url "contactus" %}">
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btncontactus btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Contact Section-->
+
+
+
+
+{% endblock  %}

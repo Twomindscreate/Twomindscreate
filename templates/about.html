@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+  About Us - TwoMindsCreate
+{% endblock  %}
+
+{% block content %}
+
+<section class="container-fluid aboutussection">
+    <h1 class="headingforabout">About Us</h1>
+    
+    <div class="cardsaboutus">
+        <div class="cardaboutus" style="background-color: white; color: black; border-right: 2px solid pink;">
+            <h2>Aniket Suryawanshi</h2>
+             <p>A highly skilled Full Stack Developer with extensive experience in both front-end and back-end technologies. Possesses a deep understanding of web development frameworks, databases, and server management. Adept at creating seamless and efficient web applications, ensuring robust performance and user-friendly interfaces. Expertise spans across various programming languages and tools, allowing for the delivery of comprehensive solutions tailored to meet client needs.</p>
+            <div class="slideraboutus">
+                <input type="radio" name="slider-ankit" id="skills-ankit" checked>
+                <input type="radio" name="slider-ankit" id="education-ankit">
+                <input type="radio" name="slider-ankit" id="experience-ankit">
+                <div class="navigationaboutus">
+                    <label for="skills-ankit"><i class="fas fa-tools"></i> Skills</label>
+                    <label for="education-ankit"><i class="fas fa-graduation-cap"></i> Education</label>
+                    <label for="experience-ankit"><i class="fas fa-briefcase"></i> Experience</label>
+                </div>
+                <div class="contentaboutus">
+                    <div class="content-itemaboutus">
+                        <h3>Skills</h3>
+                        <h6>Languages: </h6>
+                        <p>HTML, CSS,Python ,MySQL </p>
+                        <h6>Frameworks:</h6>
+                        <p> tkinter, Django,bootstrap</p>
+                    </div>
+                    <div class="content-itemaboutus">
+                        <h3>Education</h3>
+                        <p>B.E. in Artificial Intelligence & Data Science</p>
+                    </div>
+                    <div class="content-itemaboutus">
+                        <h3>Experience</h3>
+                        <h6>NetLeap IT Training and Solutions-</h6>
+                        <p> 6th Month Experience </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardaboutus" style="background-color: white; color: black;">
+            <h2>Kajal Khatri</h2>
+            <p>A talented Frontend Developer with a keen eye for design and a passion for creating intuitive user experiences. Specializes in developing responsive and visually appealing web interfaces using the latest front-end technologies. Additionally, possesses a foundational understanding of data analytics, enabling the incorporation of data-driven insights into the development process, enhancing the functionality and impact of web applications.</p>
+            <div class="slideraboutus">
+                <input type="radio" name="slider-kajal" id="skills-kajal" checked>
+                <input type="radio" name="slider-kajal" id="education-kajal">
+                <input type="radio" name="slider-kajal" id="experience-kajal">
+                <div class="navigationaboutus">
+                    <label for="skills-kajal"><i class="fas fa-tools"></i> Skills</label>
+                    <label for="education-kajal"><i class="fas fa-graduation-cap"></i> Education</label>
+                    <label for="experience-kajal"><i class="fas fa-briefcase"></i> Experience</label>
+                </div>
+                <div class="contentaboutus">
+                    <div class="content-itemaboutus">
+                        <h3>Skills</h3>
+                        <p>HTML, CSS, Python,Data Analytic</p>
+                    </div>
+                    <div class="content-itemaboutus">
+                        <h3>Education</h3>
+                        <p>B.E. in Artificial Intelligence & Data Science</p>
+                    </div>
+                    <div class="content-itemaboutus">
+                        <h3>Experience</h3>
+                        <p>Fresher</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+{% endblock  %}
