@@ -19,12 +19,7 @@
 .nav-link.scrolled {
     color: white !important;
 }
-.navbar-toggler-icon {
-    color: #452212 !important;
-}
-.bg-scroll .navbar-toggler-icon {
-    color: white !important;
-}
+
 
 /*Nav Bar End*/
 
