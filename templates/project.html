@@ -52,7 +52,7 @@
                             <div class="col-md-6">
                                 <div class="project-details">
                                     <h2 class="project-title">{{ project.title }}</h2>
-                                    <p class="project-description" style="text-align: justify;">{{ project.description }}</p>
+                                    <p class="project-description" style="text-align: justify;">{{ project.description|truncatechars:364 }}</p>
                                     <p class="project-info"><i class="fas fa-code"></i> <strong>Frontend:</strong> {{ project.frontend }}</p>
                                     <p class="project-info"><i class="fas fa-server"></i> <strong>Backend:</strong> {{ project.backend }}</p>
                                     <p class="project-info"><i class="far fa-calendar-alt"></i> <strong>Posted Date:</strong> {{ project.posted_date }}</p>
