@@ -3,23 +3,22 @@
 /*Nav Bar*/
 
 
-.navbar {
-    background-color: transparent !important;
-    transition: background-color 0.3s;
-}
-.bg-scroll {
-    background-color: #a5582c !important;
-}
-.nav-link {
-    letter-spacing: 3px;
-    font-size: medium;
-    color: #452212 !important;
-    transition: color 0.3s;
-}
-.nav-link.scrolled {
-    color: white !important;
-}
-
+        .navbar {
+            background-color: transparent !important;
+            transition: background-color 0.3s;
+        }
+        .bg-scroll {
+            background-color: #a5582c !important;
+        }
+        .nav-link {
+            letter-spacing: 3px;
+            font-size: medium;
+            color: #452212 !important;
+            transition: color 0.3s;
+        }
+        .nav-link.scrolled {
+            color: white !important;
+        }
         .navbar-nav {
             width: 100%;
             text-align: center;
